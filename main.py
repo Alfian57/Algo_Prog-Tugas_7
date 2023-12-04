@@ -24,14 +24,17 @@ def cari_mahasiswa(nim):
 
 
 def hapus_mahasiswa(nim):
+    global list_mahasiswa
     new_list_mahasiswa = []
     is_found = False
 
     for mahasiswa in list_mahasiswa:
         if mahasiswa["nim"] != nim:
-            new_list_mahasiswa.append("mahasiswa")
+            new_list_mahasiswa.append(mahasiswa)
         else:
             is_found = True
+
+    list_mahasiswa = new_list_mahasiswa
 
     return is_found
 
