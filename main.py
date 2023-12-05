@@ -51,7 +51,8 @@ def edit_mahasiswa(nim, new_nama):
 
 def print_mahasiswa():
     for mahasiswa in list_mahasiswa:
-        print(mahasiswa["nim"], " - ", mahasiswa["nama"])
+        # print(mahasiswa["nim"], " - ", mahasiswa["nama"])
+        print(f"{mahasiswa['nim']} - {mahasiswa['nama']}")
 
 
 while True:
